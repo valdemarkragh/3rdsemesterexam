@@ -37,7 +37,7 @@ include('topic_methods.php');
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php#feature">What is CSR?</a></li>
-		  <li><a href="index.php#organisations">Does CSR matter to you?</a></li>
+          <li><a href="index.php#organisations">Does CSR matter to you?</a></li>
           <li><a href="index.php#ourwork">Our Work</a></li>
           <li><a href="index.php#partners">Partners</a></li>
           <li><a href="community.php">Community</a></li>
@@ -72,7 +72,7 @@ include('topic_methods.php');
 			$stmt = $con->prepare($sql);
 			$stmt->bind_param('i', $_GET['id']);
 			$stmt->execute();
-            $stmt->bind_result($headline, $content, $postdate, $username);
+                        $stmt->bind_result($headline, $content, $postdate, $username);
 											   
 			while ($stmt->fetch());
 			?>
